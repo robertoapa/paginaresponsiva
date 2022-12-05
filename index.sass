@@ -1,0 +1,164 @@
+$colorTabla: #dedddd
+$grosorLinea: 0.5px
+
+
+
+@media ( max-width: 800px  )
+    .header1
+        display: none !important
+    .seleccion
+        overflow: scroll !important
+    .productos
+        grid-template-columns: 1fr 1fr 
+    .ocultarth
+        display: none
+   
+        
+@media ( min-width:800px )
+    .header2
+        display: none !important
+    .productos
+        grid-template-columns: 1fr 1fr 1fr 
+    .thExtra
+            display: none
+    
+    
+body 
+    width: 1265px
+    margin: 0px
+    font-family: Arial, Helvetica, sans-serif
+
+
+
+
+header
+    background-color: white
+    position: sticky
+    top: 0px
+    .header1
+        display: flex
+        width: 100%
+        height: 3.5rem
+
+        box-shadow: 0px 0px 10px grey
+        .hdizq
+            .p
+            margin-left: 2rem
+            display: flex
+            justify-content: space-between
+            width: 50%
+            height: 100%
+            align-items: center
+            font-family: calibri
+        .hdder
+            position: absolute
+            right: 3rem
+            margin-top: 1rem
+            display: flex
+            width: 8%
+            justify-content: space-between
+            align-items: center   
+            i
+                font-size: large
+        img
+            height: 60%
+    .header2
+        padding-left: 2rem
+        padding-right: 2rem
+        display: flex
+        width: 90%
+        height: 100%
+        background-color: white
+        justify-content: space-between
+        align-items: center
+        
+
+
+.seleccion
+ 
+    background-color: #F0F4F0
+    width: 100%
+    height: 18rem
+    .opciones
+        margin-left: 2rem
+        display: flex
+        justify-content: space-between
+        
+        align-items: center
+        width: 900px    
+        height: 100%
+        
+        .opcion
+            
+            height: 12rem
+            width: 13.5rem
+            background-color: white
+           
+            img
+                height: 65%
+                width: 100%
+            p
+                margin-left: 15px
+        .opcion:hover
+            background-color: black
+            color: white
+
+.productos
+
+    display: grid
+    .cardProductos
+        margin-bottom: 2rem 
+        padding-left: 2.5rem
+        height: 28rem
+        width: 85%
+        img
+            
+
+            background-color: #F6F6F6
+            max-width: 100%
+
+
+
+table
+    
+    margin-top: 3rem
+    height: 40rem
+    margin-left: auto
+    margin-right: auto
+    width: 85%
+    thead
+       
+        td
+            text-align: center
+            height: 3rem
+            img
+                max-width: 50%
+            p
+                font-weight: bold
+    border-collapse: collapse
+    tbody
+        
+            
+        td
+            text-align: center
+            border-bottom: $grosorLinea $colorTabla solid
+            border-top: $grosorLinea $colorTabla solid
+    
+            i
+                margin-left: 1rem
+            
+            
+        th
+            padding-left: 10px
+            border-bottom: $grosorLinea $colorTabla solid
+            border-top: $grosorLinea $colorTabla solid
+            width: 250px
+            text-align: left
+
+        .thExtra
+            th
+                text-align: center
+                border-bottom: solid white
+.anteproductos
+    padding-left: 2rem
+    margin-top: 3rem

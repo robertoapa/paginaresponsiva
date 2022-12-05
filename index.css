@@ -1,0 +1,164 @@
+@media (max-width: 800px) {
+  .header1 {
+    display: none !important;
+  }
+  .seleccion {
+    overflow: scroll !important;
+  }
+  .productos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ocultarth {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .header2 {
+    display: none !important;
+  }
+  .productos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .thExtra {
+    display: none;
+  }
+}
+body {
+  width: 1265px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+header .header1 {
+  display: flex;
+  width: 100%;
+  height: 3.5rem;
+  box-shadow: 0px 0px 10px grey;
+}
+header .header1 .hdizq {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  font-family: calibri;
+}
+header .header1 .hdder {
+  position: absolute;
+  right: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  width: 8%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header1 .hdder i {
+  font-size: large;
+}
+header .header1 img {
+  height: 60%;
+}
+header .header2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seleccion {
+  background-color: #F0F4F0;
+  width: 100%;
+  height: 18rem;
+}
+.seleccion .opciones {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 100%;
+}
+.seleccion .opciones .opcion {
+  height: 12rem;
+  width: 13.5rem;
+  background-color: white;
+}
+.seleccion .opciones .opcion img {
+  height: 65%;
+  width: 100%;
+}
+.seleccion .opciones .opcion p {
+  margin-left: 15px;
+}
+.seleccion .opciones .opcion:hover {
+  background-color: black;
+  color: white;
+}
+
+.productos {
+  display: grid;
+}
+.productos .cardProductos {
+  margin-bottom: 2rem;
+  padding-left: 2.5rem;
+  height: 28rem;
+  width: 85%;
+}
+.productos .cardProductos img {
+  background-color: #F6F6F6;
+  max-width: 100%;
+}
+
+table {
+  margin-top: 3rem;
+  height: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border-collapse: collapse;
+}
+table thead td {
+  text-align: center;
+  height: 3rem;
+}
+table thead td img {
+  max-width: 50%;
+}
+table thead td p {
+  font-weight: bold;
+}
+table tbody td {
+  text-align: center;
+  border-bottom: 0.5px #dedddd solid;
+  border-top: 0.5px #dedddd solid;
+}
+table tbody td i {
+  margin-left: 1rem;
+}
+table tbody th {
+  padding-left: 10px;
+  border-bottom: 0.5px #dedddd solid;
+  border-top: 0.5px #dedddd solid;
+  width: 250px;
+  text-align: left;
+}
+table tbody .thExtra th {
+  text-align: center;
+  border-bottom: solid white;
+}
+
+.anteproductos {
+  padding-left: 2rem;
+  margin-top: 3rem;
+}/*# sourceMappingURL=index.css.map */
